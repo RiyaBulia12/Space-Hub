@@ -1,10 +1,42 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Traveler's Hub
+The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
+- The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.
+- The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
+- The My Profile section displays all reserved rockets and space missions.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Live Demo
+Work In Progress
+
+## Built With
+- React, Redux, Jest, HTML5, CSS3, ES6, Tailwind
+
+### Prerequisites
+
+- You need to have Code Editor Installed
+- Make sure Nodejs and NPM is installed in your system for linters and libraries
+
+### Project Setup
+
+To get a local copy up and running, follow these simple example steps.
+
+1. Clone the repo in your local machine:
+```bash
+git clone https://github.com/RiyaBulia12/Book-Store.git
+```
+2. Open terminal and cd into project and install the dependencies
+```bash
+cd Book-Store
+npm install
+```
+
+3. run the command to open the project automatically in your brower:
+```bash
+npm run build
+npm start
+```
 
 ### `npm start`
 
@@ -17,7 +49,6 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -26,8 +57,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -39,32 +68,36 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Riya Bulia**
 
-### Code Splitting
+- GitHub: [@RiyaBulia12](https://github.com/RiyaBulia12)
+- LinkedIn: [Riya-Bulia](https://linkedin.com/in/riya-bulia)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Betsegaw SebSibe**
 
-### Analyzing the Bundle Size
+- GitHub: [@betses](https://github.com/betses)
+- Twitter: [@betse_s](https://twitter.com/betse_s)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome!
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Setup Project](https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md)
+- [Tailwind](https://tailwindcss.com/)
+- [React Tutorials](https://ibaslogic.com/react-tutorial-for-beginners/)
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React documentation](https://reactjs.org/)
 
-### `npm run build` fails to minify
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
