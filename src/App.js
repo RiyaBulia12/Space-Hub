@@ -1,13 +1,21 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import RocketView from './components/RocketView';
+import MissionView from './components/MissionView';
+import NavigationView from './components/NavigationView';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
+        <div>
+          <NavigationView />
+        </div>
       </header>
+      <Routes>
+        <Route path="/rockets" element={<RocketView />} />
+        <Route path="/missions" element={<MissionView />} />
+      </Routes>
     </div>
   );
 }
