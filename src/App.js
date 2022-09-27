@@ -1,4 +1,3 @@
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import RocketView from './components/RocketView';
 import MissionView from './components/MissionView';
