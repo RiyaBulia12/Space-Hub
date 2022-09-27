@@ -11,7 +11,7 @@ const NavigationView = () => (
       <ul className="self-center">
         <li>
           {[
-            ['Rockets', '/rockets'],
+            ['Rockets', '/'],
           ].map(([title, url]) => (
             <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline" key={title}>{title}</NavLink>
           ))}
