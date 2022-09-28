@@ -12,7 +12,7 @@ function App() {
         </div>
       </header>
       <Routes>
-        <Route path="/rockets" element={<RocketView />} />
+        <Route path="/" element={<RocketView />} />
         <Route path="/missions" element={<MissionView />} />
       </Routes>
     </div>
