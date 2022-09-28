@@ -8,14 +8,16 @@ const NavigationView = () => (
         <img src={logo} className="h-12 px-4 lg:h-16" alt="Space Hub Logo" />
         <h1 className="text-2xl font-medium lg:text-3xl">Space Traveler&apos;s Hub</h1>
       </div>
-      <ul className="self-center">
-        <li>
-          {[
-            ['Rockets', '/'],
-          ].map(([title, url]) => (
-            <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline" key={title}>{title}</NavLink>
-          ))}
-        </li>
+      <ul className="flex self-center">
+
+        {[
+          ['Rockets', '/'], ['missions', '/missions'], ['My Profile', '/MyProfile'],
+        ].map(([title, url]) => (
+          <li key={title} className="last-of-type:border-l-2 last-of-type:border-black">
+            <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline last-of-type:line-throug">{title}</NavLink>
+          </li>
+        ))}
+
       </ul>
     </nav>
   </>
