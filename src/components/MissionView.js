@@ -20,10 +20,10 @@ function MissionView() {
       <table className=" border-collapse table-auto border-2 border-slate-200 ">
         <thead>
           <tr className="">
-            <th className="border-2  border-slate-200 p-2">Mission</th>
-            <th className="w-4/6 border border-slate-200">Description</th>
-            <th className="border-2 border-slate-200 ">Status</th>
-            <th className="border-2 border-slate-200 "> </th>
+            <th className="w-[10%] border-2  border-slate-200 p-2">Mission</th>
+            <th className="w-[50%] sm:w-[60%] border border-slate-200">Description</th>
+            <th className="w-[20%] border-2 border-slate-200 ">Status</th>
+            <th className="w-[20%] border-2 border-slate-200 "> </th>
           </tr>
         </thead>
         <tbody>
@@ -33,16 +33,16 @@ function MissionView() {
                 {mission.mission_name}
               </td>
 
-              <td className="p-2 border-2 border-slate-200">{mission.description}</td>
+              <td className="p-2 border-2  border-slate-200">{mission.description}</td>
 
-              <td className="p-3 border-2 w-[9%] text-center border-slate-200 ">
+              <td className="border-2  text-center border-slate-200 ">
                 {!mission.reserved && <span className="bg-[#6D757D] p-1 px-1.5 text-white rounded-md font-semibold">NOT A MEMBER</span>}
                 {mission.reserved && (
                   <span className="bg-[#18A2B8] p-1 px-1.5 text-white rounded-md font-semibold">Active Member</span>
                 )}
               </td>
 
-              <td className="p-3 border-2 border-slate-200 text-center w-1/12">
+              <td className="p-3 border-2 border-slate-200 text-center ">
                 <button
                   type="button"
                   className="p-2 border-2 border-slate-400 rounded-md"

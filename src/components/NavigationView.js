@@ -14,7 +14,7 @@ const NavigationView = () => (
           ['Rockets', '/'], ['missions', '/missions'], ['My Profile', '/MyProfile'],
         ].map(([title, url]) => (
           <li key={title} className="last-of-type:border-l-2 last-of-type:border-black">
-            <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline last-of-type:line-throug">{title}</NavLink>
+            <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline">{title}</NavLink>
           </li>
         ))}
 
