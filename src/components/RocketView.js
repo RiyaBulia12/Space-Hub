@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import fetchRockets from '../middleware/api';
-import { reserveRocket, cancelRocket } from '../redux/rocketsReducer';
+import { reserveRocket, cancelRocket } from '../redux/slices/rocketsReducer';
 
 const RocketView = () => {
   const rocketsObj = useSelector((state) => state.rockets);
@@ -15,7 +15,7 @@ const RocketView = () => {
 
   return (
     <>
-      { rocketsObj.map((item) => (
+      {rocketsObj.map((item) => (
         <div key={item.id} className="mx-8 lg:mx-36">
           <div className="flex flex-col bg-white border shadow-md my-8 md:flex-row text-neutral-700">
             <img className="object-cover w-full h-72 md:h-auto md:w-64" src={item.flickr_images} alt={item.rocket_name} />
@@ -23,9 +23,9 @@ const RocketView = () => {
               <h5 className="mb-2 text-2xl font-bold">{item.rocket_name}</h5>
               <p className="mb-3 font-normal ">
                 {item.reserved === true && (
-                <span className="w-fit bg-blue-100 text-blue-800 text-xs font-semibold my-2 mr-3 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
-                  Reserved
-                </span>
+                  <span className="w-fit bg-blue-100 text-blue-800 text-xs font-semibold my-2 mr-3 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+                    Reserved
+                  </span>
                 )}
                 {item.description}
               </p>

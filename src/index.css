@@ -29,3 +29,7 @@ code {
     'Courier New',
     monospace;
 }
+
+tr:nth-child(even) {
+  @apply bg-[#F2F2F2];
+}
