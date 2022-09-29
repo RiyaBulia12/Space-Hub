@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import fetchRockets from '../../middleware/api';
+import fetchRockets from '../../middleware/RocketApi';
 
 const initialState = [];
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import fetchRockets from '../middleware/api';
+import fetchRockets from '../middleware/RocketApi';
 import { reserveRocket, cancelRocket } from '../redux/slices/rocketsReducer';
 
 const RocketView = () => {
@@ -10,7 +10,7 @@ const RocketView = () => {
   const cancelClick = (event) => dispatch(cancelRocket(event.target.id));
 
   useEffect(() => {
-    dispatch(fetchRockets());
+    if (!rocketsObj.length) dispatch(fetchRockets());
   }, [rocketsObj.length, dispatch]);
 
   return (
