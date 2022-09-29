@@ -8,8 +8,7 @@ function MissionView() {
 
   useEffect(() => {
     dispatch(fetchMissions);
-    // eslint-disable-next-line
-  }, []);
+  }, [dispatch]);
 
   const toggleStatus = (id) => {
     dispatch(changeStatus(id));

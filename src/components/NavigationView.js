@@ -11,7 +11,7 @@ const NavigationView = () => (
       <ul className="flex self-center">
 
         {[
-          ['Rockets', '/'], ['missions', '/missions'], ['My Profile', '/MyProfile'],
+          ['Rockets', '/'], ['Missions', '/Missions'], ['My Profile', '/my-profile'],
         ].map(([title, url]) => (
           <li key={title} className="last-of-type:border-l-2 last-of-type:border-black">
             <NavLink to={url} className="px-8 py-2 text-blue-500 md:text-lg hover:underline active:underline">{title}</NavLink>

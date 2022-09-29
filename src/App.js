@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<RocketView />} />
         <Route path="/missions" element={<MissionView />} />
-        <Route path="/MyProfile" element={<MyProfileView />} />
+        <Route path="/my-profile" element={<MyProfileView />} />
       </Routes>
     </div>
   );
