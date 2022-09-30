@@ -6,7 +6,7 @@ const JoinedMissions = () => {
     .filter((mission) => mission.reserved));
 
   return (
-    <div className="">
+    <div className="flex-1">
       <h2 className="text-3xl">My Missions</h2>
       <ul className="mt-3 border-2 w-4/12 rounded">
         {joinedMissions.length > 0
@@ -17,7 +17,7 @@ const JoinedMissions = () => {
           ))
           : (
             <span className="px-10 text-lg">
-              You haven`t joined any missions yet
+              You haven&apos;t joined any missions yet
             </span>
           )}
       </ul>
