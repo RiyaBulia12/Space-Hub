@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reserved Rockets View renders ReservedRockets correctly 1`] = `
+<div
+  className="flex-1"
+>
+  <h2
+    className="text-3xl"
+  >
+    My Rockets
+  </h2>
+  <ul
+    className="mt-3 border-2 w-4/12 rounded"
+  >
+    <span
+      className="px-10 text-lg"
+    >
+      You haven't reserved any Rockets yet
+    </span>
+  </ul>
+</div>
+`;
+
+exports[`Rockets View renders rockets page correctly 1`] = `null`;
