@@ -2,12 +2,9 @@ import {
   render, screen, waitFor, fireEvent, act,
 } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import MissionView from './MissionView';
-import MyProfileView from './my-profile/MyProfileView';
-import store from '../redux/configureStore';
-// import axios from '../middleware/MissionApi';
-
-// jest.mock('../middleware/MissionApi');
+import MissionView from '../MissionView';
+import MyProfileView from '../my-profile/MyProfileView';
+import store from '../../redux/configureStore';
 
 global.fetch = jest.fn(() => Promise.resolve({
   json: () => Promise.resolve([
