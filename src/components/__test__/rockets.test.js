@@ -3,8 +3,7 @@ import { Provider } from 'react-redux';
 import store from '../../redux/configureStore';
 import RocketView from '../RocketView';
 import ReservedRockets from '../my-profile/ReservedRockets/ReservedRockets';
-import  fetchRockets from '../../middleware/RocketApi';
-import MyProfileView from '../my-profile/MyProfileView';
+import fetchRockets from '../../middleware/RocketApi';
 
 const MockRockets = () => (
   <Provider store={store}>
@@ -13,7 +12,6 @@ const MockRockets = () => (
 );
 
 describe('Rockets View', () => {
-
   it('renders rockets page correctly', () => {
     const tree = renderer.create(<MockRockets />);
     expect(tree).toMatchSnapshot();
@@ -23,7 +21,6 @@ describe('Rockets View', () => {
     await store.dispatch(fetchRockets());
     expect(store.getState().rockets.length).toEqual(4);
   });
-
 });
 
 const MockReservedRockets = () => (
@@ -33,10 +30,8 @@ const MockReservedRockets = () => (
 );
 
 describe('Reserved Rockets View', () => {
-
   it('renders ReservedRockets correctly', () => {
     const tree = renderer.create(<MockReservedRockets />);
     expect(tree).toMatchSnapshot();
   });
-
 });

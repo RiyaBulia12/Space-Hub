@@ -6,9 +6,8 @@ import MissionView from '../MissionView';
 import RocketView from '../RocketView';
 
 describe('Navigation', () => {
-
   it('renders navigation menu correctly', () => {
-   const MockNavigation = () => (
+    const MockNavigation = () => (
       <Provider store={store}>
         <NavigationView />
       </Provider>
@@ -17,7 +16,7 @@ describe('Navigation', () => {
   });
 
   it('renders rockets correctly', () => {
-   const MockNavigation = () => (
+    const MockNavigation = () => (
       <Provider store={store}>
         <RocketView />
       </Provider>
@@ -26,7 +25,7 @@ describe('Navigation', () => {
   });
 
   it('renders missions correctly', () => {
-   const MockNavigation = () => (
+    const MockNavigation = () => (
       <Provider store={store}>
         <MissionView />
       </Provider>
@@ -35,12 +34,11 @@ describe('Navigation', () => {
   });
 
   it('renders my profile correctly', () => {
-   const MockNavigation = () => (
+    const MockNavigation = () => (
       <Provider store={store}>
         <MyProfileView />
       </Provider>
     );
     expect(MockNavigation).toMatchSnapshot();
   });
-
 });
