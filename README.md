@@ -8,7 +8,7 @@ The Space Travelers' Hub consists of Rockets, Missions, and the My Profile secti
 
 
 # Live Demo
-Work In Progress
+[App Link](https://riya-space-hub.netlify.app/)
 
 ## Built With
 - React, Redux, Jest, HTML5, CSS3, ES6, Tailwind
