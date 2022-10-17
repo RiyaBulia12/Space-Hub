@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders missions correctly 1`] = `[Function]`;
+
+exports[`Navigation renders my profile correctly 1`] = `[Function]`;
+
+exports[`Navigation renders navigation menu correctly 1`] = `[Function]`;
+
+exports[`Navigation renders rockets correctly 1`] = `[Function]`;
